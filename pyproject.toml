@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phoenix"
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib",
+    "pytest", 
+    "ruff",
+    "esptool",
+    "mpremote",
+    "pyqt6",
+    "minipb @ git+https://github.com/dogtopus/minipb",
+]
+
+[tool.setuptools]
+packages = ["common", "desktop", "src", "tools"]
+
+[tool.ruff]
+extend = "ruff.toml"

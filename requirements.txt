@@ -4,5 +4,8 @@ ruff
 
 esptool
 mpremote
+protobuf
 
 pyqt6
+git+https://github.com/dogtopus/minipb
+
